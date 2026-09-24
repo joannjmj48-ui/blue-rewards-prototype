@@ -16,13 +16,10 @@
       if (n === i) { c.setAttribute('aria-current', 'true'); }
       else { c.removeAttribute('aria-current'); }
     });
-    counter.textContent = i + ' of ' + (steps.length - 1);
+    counter.textContent = (i + 1) + ' of ' + steps.length;
     prev.disabled = (i === 0);
     next.disabled = (i === steps.length - 1);
-    if (push) {
-      history.replaceState(null, '', '#s' + i);
-    }
-    chips[i].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+    if (push) { history.replaceState(null, '', '#s' + i); }
   }
 
   chips.forEach(function (c) {
