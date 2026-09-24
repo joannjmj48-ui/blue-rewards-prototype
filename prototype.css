@@ -19,8 +19,8 @@ body {
   line-height: 1.5;
 }
 
-.site-head { padding: 56px 24px 30px; }
-.head-inner, .sec-head, .ex-grid, .site-foot p, .step { max-width: 1100px; margin-left: auto; margin-right: auto; }
+.site-head { padding: 34px 24px 14px; }
+.head-inner, .sec-head, .ex-grid, .site-foot p, .compare { max-width: 1400px; margin-left: auto; margin-right: auto; }
 .kicker {
   margin: 0 0 10px;
   font-size: 12px;
@@ -30,29 +30,29 @@ body {
   color: var(--muted);
 }
 h1 {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 700;
   letter-spacing: -0.02em;
 }
-.lede { margin: 0; max-width: 64ch; color: var(--muted); font-size: 16px; }
+.lede { margin: 0; max-width: 88ch; color: var(--muted); font-size: 16px; }
 
 .sec-head { padding: 0 24px; }
 .sec-head h2 {
-  margin: 0 0 6px;
-  font-size: 24px;
+  margin: 0 0 5px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--accent);
 }
 .sec-head p { margin: 0; color: var(--muted); font-size: 15px; max-width: 64ch; }
 
-.journey { padding: 26px 0 8px; }
+.journey { padding: 14px 0 8px; }
 .rail {
   display: flex;
   gap: 8px;
-  padding: 18px 24px 16px;
-  max-width: 1100px;
+  padding: 14px 24px 12px;
+  max-width: 1400px;
   margin: 0 auto;
   overflow-x: auto;
 }
@@ -77,15 +77,32 @@ h1 {
 .chip:hover { border-color: var(--accent); color: var(--ink); }
 .chip[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
 
-#stage { padding: 10px 24px 0; }
+.compare {
+  display: grid;
+  grid-template-columns: 390px minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+  padding: 10px 24px 0;
+}
 .step {
   display: grid;
-  grid-template-columns: 430px minmax(0, 1fr);
-  gap: 48px;
+  grid-template-columns: 390px minmax(0, 1fr);
+  gap: 40px;
   align-items: start;
 }
 .step[hidden] { display: none; }
-.phone-wrap { display: flex; justify-content: center; }
+.phone-col { display: flex; flex-direction: column; gap: 10px; }
+.col-label {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.col-label.proposed { color: var(--accent); }
+.today { position: sticky; top: 20px; }
+.today-note { margin: 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
 .phone {
   width: 390px;
   height: 844px;
@@ -95,8 +112,9 @@ h1 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
-.panel { padding-top: 8px; }
+.panel { padding-top: 24px; }
 .eyebrow {
   margin: 0 0 8px;
   font-size: 11px;
@@ -137,21 +155,24 @@ h1 {
 .exhibits { padding: 46px 0 8px; border-top: 1px solid var(--line); margin-top: 34px; }
 .ex-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 34px 26px;
   padding: 26px 24px 0;
 }
 .ex { margin: 0; }
 .ex-shot {
   width: 100%;
-  height: 464px;
+  height: 676px;
   overflow: hidden;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
 }
+.ex-holder { width: 312px; height: 676px; overflow: hidden; }
 .ex-scale {
   width: 390px;
   height: 844px;
-  transform: scale(0.55);
+  transform: scale(0.80);
   transform-origin: top left;
 }
 .ex figcaption { padding-top: 14px; }
@@ -162,18 +183,22 @@ h1 {
 .site-foot { padding: 54px 24px 64px; color: var(--muted); font-size: 14px; }
 .site-foot p { max-width: 72ch; }
 
-@media (max-width: 1040px) {
+@media (max-width: 1320px) {
+  .step { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .panel h2 { margin-bottom: 12px; }
+}
+@media (max-width: 1240px) {
+  .ex-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 980px) {
   .ex-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 900px) {
-  .step { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  .phone-wrap { order: 2; }
-  .panel { order: 1; }
+  .compare { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .today { position: static; }
   .site-head { padding: 36px 20px 22px; }
-  .sec-head, #stage, .ex-grid, .rail { padding-left: 20px; padding-right: 20px; }
+  .sec-head, .compare, .ex-grid, .rail { padding-left: 20px; padding-right: 20px; }
 }
 @media (max-width: 620px) {
   .ex-grid { grid-template-columns: minmax(0, 1fr); }
-  .ex-shot { height: 600px; }
-  .ex-scale { transform: scale(0.71); }
 }
