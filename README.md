@@ -4,11 +4,12 @@ A low-fidelity walkthrough of a proposed guiding scenario for the BMO Blue
 Rewards loyalty product, built for MDPM 883 (Team Zig) at Smith School of
 Business, Queen's University.
 
-The page has two parts. **The journey** is one Reward Goal from the first look
-to redeeming it, six screens across nine months, because that is what a member
-actually lives. **Outside the journey** is everything else the product does,
-shown beside the journey rather than bolted onto it, since nobody sits through
-fourteen screens in a row.
+The page has two parts. At the top, **Blue Rewards as it is today** sits fixed
+on the left while **the journey** steps through it on the right: one Reward Goal
+from the first look to redeeming it, six screens across nine months. The before
+and the after stay side by side, so no scrolling is needed to show the contrast.
+**Outside the journey** is everything else the product does, shown underneath
+rather than bolted onto it, since nobody sits through fourteen screens in a row.
 
 ## What is mine and what is not
 
