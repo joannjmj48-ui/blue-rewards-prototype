@@ -4,10 +4,11 @@ A low-fidelity clickable walkthrough of a proposed guiding scenario for the BMO
 Blue Rewards loyalty product, built for MDPM 883 (Team Zig) at Smith School of
 Business, Queen's University.
 
-Eleven screens run from a member browsing with nothing set up, through setting a
-Reward Goal, tracking it as the points requirement moves, and redeeming. A
-twelfth path covers the member who never sets a goal at all. The first screen
-shows what the product does today, so the gap is visible rather than asserted.
+Thirteen screens run from a member browsing with nothing set up, through setting
+a Reward Goal, sharing it with the person they are saving with, tracking it as
+the points requirement moves, and redeeming. A fourteenth path covers the member
+who never sets a goal at all. The first screen shows what the product does today,
+so the gap is visible rather than asserted.
 
 ## What is mine and what is not
 
@@ -30,4 +31,4 @@ Static files, nothing to build. Open `index.html`, or serve the folder:
 
 - `index.html` &mdash; the screens and the captions
 - `prototype.css` &mdash; page styling (screen internals are inline)
-- `prototype.js` &mdash; step navigation, keyboard arrows, deep links (`#s0` to `#s11`)
+- `prototype.js` &mdash; step navigation, keyboard arrows, deep links (`#s0` to `#s13`)
