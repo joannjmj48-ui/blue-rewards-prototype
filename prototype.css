@@ -1,12 +1,12 @@
 :root {
-  --ground: #F4F3EF;
-  --ink: #1A1A18;
-  --muted: #5C5C55;
-  --line: #D9D7CF;
-  --accent: #A8492A;
+  --ground: #EDF3F8;
+  --ink: #111417;
+  --muted: #656B75;
+  --line: #DCE7EF;
+  --accent: #225383;
   --card: #FFFFFF;
-  --faint: #EDEBE4;
-  --disp: 'Space Grotesk', Georgia, serif;
+  --faint: #C8EDFD;
+  --disp: 'Source Sans 3', system-ui, sans-serif;
   --body: 'Source Sans 3', system-ui, sans-serif;
 }
 
@@ -148,7 +148,7 @@ main { padding: 36px 24px 8px; }
   align-items: center;
   justify-content: center;
   padding: 16px 24px 22px;
-  background: linear-gradient(to top, var(--ground) 62%, rgba(244, 243, 239, 0));
+  background: linear-gradient(to top, var(--ground) 62%, rgba(237, 243, 248, 0));
 }
 .nav-btn {
   min-height: 46px;
@@ -164,7 +164,7 @@ main { padding: 36px 24px 8px; }
 }
 .nav-btn:hover { border-color: var(--ink); }
 .nav-btn.primary { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
-.nav-btn.primary:hover { background: #7E3720; border-color: #7E3720; }
+.nav-btn.primary:hover { background: #17395C; border-color: #17395C; }
 .nav-btn[disabled] { opacity: 0.4; cursor: default; }
 .nav-btn[disabled]:hover { border-color: var(--line); }
 .counter {

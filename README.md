@@ -15,8 +15,10 @@ The task model, the personas and Scenario 4 come from the Team Zig Assignment 1
 submission. The screens, the sequence and the framing are my design proposal for
 the convergence session, not a team decision.
 
-The prototype is deliberately low fidelity and deliberately not in Blue Rewards
-branding. The numbers in it are plausible rather than real.
+The screens use the Blue Rewards colour palette and its five-tab navigation
+so the proposal reads in context, but they stay sketch level: no photography,
+no marketing imagery and no reproduction of the Blue Rewards logo or wordmark.
+The numbers in them are plausible rather than real.
 
 ## Running it
 
