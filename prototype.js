@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  var steps = Array.prototype.slice.call(document.querySelectorAll('.step'));
+  var steps = Array.prototype.slice.call(document.querySelectorAll('#stage .step'));
   var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
   var prev = document.getElementById('prev');
   var next = document.getElementById('next');

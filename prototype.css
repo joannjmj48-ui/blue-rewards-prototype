@@ -152,6 +152,9 @@ h1 {
 .nav-btn[disabled] { opacity: 0.4; cursor: default; }
 .counter { font-size: 14px; font-weight: 700; color: var(--muted); min-width: 62px; text-align: center; }
 
+.firstrun { padding: 46px 0 8px; border-top: 1px solid var(--line); margin-top: 34px; }
+.solo-wrap { max-width: 1400px; margin: 0 auto; padding: 22px 24px 0; }
+.step.solo { display: grid; }
 .exhibits { padding: 46px 0 8px; border-top: 1px solid var(--line); margin-top: 34px; }
 .ex-grid {
   display: grid;
