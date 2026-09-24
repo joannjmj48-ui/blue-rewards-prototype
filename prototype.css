@@ -159,7 +159,9 @@ h1 {
   gap: 34px 26px;
   padding: 26px 24px 0;
 }
-.ex { margin: 0; }
+.ex { margin: 0; scroll-margin-top: 24px; outline: none; }
+.ex:target figcaption { border-left: 3px solid var(--accent); padding-left: 12px; margin-left: -15px; }
+html { scroll-behavior: smooth; }
 .ex-shot {
   width: 100%;
   height: 676px;
